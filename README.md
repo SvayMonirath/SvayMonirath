@@ -1,8 +1,6 @@
 <h1 align="center">Hi 👋, I'm Svay Monirath</h1>
 <h3 align="center">Aspiring Developer | Building Projects & Learning Backend</h3>
 
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=svaymonirath&label=Profile%20views&color=0e75b6&style=flat" alt="svaymonirath" /> </p>
-
 - 🌱 I’m currently learning **Flask & FastAPI PostgreSQL & MySQL REST APIs, authentication, and security best practices Cloud deployment basics (Render, AWS, Heroku)**
 
 - 👨‍💻 All of my projects are available at [https://github.com/SvayMonirath](https://github.com/SvayMonirath)
