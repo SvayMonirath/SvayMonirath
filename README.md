@@ -21,5 +21,3 @@
 <p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=svaymonirath&show_icons=true&locale=en&layout=compact" alt="svaymonirath" /></p>
 
 <p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=svaymonirath&show_icons=true&locale=en" alt="svaymonirath" /></p>
-
-<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=svaymonirath&" alt="svaymonirath" /></p>
