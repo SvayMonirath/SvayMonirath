@@ -1,15 +1,15 @@
-<h1 align="center">Hi 👋, I'm Svay Monirath</h1>
+<h1 align="center">Hi , I'm Svay Monirath</h1>
 <h3 align="center">Aspiring Developer | Building Projects & Learning Backend</h3>
 
-- 🌱 I’m currently learning **Flask & FastAPI PostgreSQL & MySQL REST APIs, authentication, and security best practices Cloud deployment basics (Render, AWS, Heroku)**
+-  I’m currently learning **Flask & FastAPI PostgreSQL & MySQL REST APIs, authentication, and security best practices Cloud deployment basics (Render, AWS, Heroku)**
 
-- 👨‍💻 All of my projects are available at [https://github.com/SvayMonirath](https://github.com/SvayMonirath)
+-  All of my projects are available at [https://github.com/SvayMonirath](https://github.com/SvayMonirath)
 
-- 💬 Ask me about **Python and Flask development SQLAlchemy and database modeling Simple REST API design**
+-  Ask me about **Python and Flask development SQLAlchemy and database modeling Simple REST API design**
 
-- 📫 How to reach me **svaymonirathofficial@gmail.com**
+-  How to reach me **svaymonirathofficial@gmail.com**
 
-- ⚡ Fun fact **Still mastering backend development, but love learning new tech!**
+
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
