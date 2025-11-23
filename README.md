@@ -3,7 +3,7 @@
 
 ---
 
-### 🔭 My learning:
+### My learning:
 - **Backend:** Flask, FastAPI  
 - **Databases:** PostgreSQL, MySQL, SQLite, MongoDB  
 - **API Development:** REST APIs, Graphql,  Authentication & Security Best Practices  
@@ -11,6 +11,7 @@
 - **Testing & QA:** Unit testing (Pytest, unittest), Integration testing, API testing (Postman, Insomnia)
 
 ---
+### Tools & Technologies:
 
 <p>
 <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" width="40" title="Python"/>
