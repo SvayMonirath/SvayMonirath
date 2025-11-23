@@ -8,7 +8,7 @@
 - **Databases:** PostgreSQL, MySQL, SQLite, MongoDB  
 - **API Development:** REST APIs, Graphql,  Authentication & Security Best Practices  
 - **Deployment:** Render, Docker, GitHub Actions
-- **Testing & QA:** Unit testing (Pytest, unittest), Integration testing, API testing (Postman, Insomnia)
+- **Testing & QA:** Unit testing, Integration testing, API testing
 
 ---
 ### Tools & Technologies:
@@ -37,6 +37,7 @@
 <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" width="40" title="Linux"/>
 <img src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg" width="40" title="Figma"/>
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg" width="40" title="postman"/>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg" width="40" title="GraphQL"/>
 <img src="https://www.vectorlogo.zone/logos/nginx/nginx-icon.svg" width="40" title="Nginx"/>
 </p>
 
