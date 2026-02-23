@@ -1,17 +1,16 @@
-<h1 align="center">Hi, I'm Svay Monirath</h1>
+<h1 align="center">My Name is Svay Monirath</h1>
 <h3 align="center">Aspiring Backend Developer 
 
 ---
 
 ### My learning:
-- **Backend:** Flask, FastAPI  
-- **Databases:** PostgreSQL, MySQL, SQLite, MongoDB  
+- **Backend:** Flask, FastAPI
+- **Databases:** PostgreSQL, MySQL, MongoDB  
 - **API Development:** REST APIs, Graphql,  Authentication & Security Best Practices  
 - **Deployment:** Render, Docker, GitHub Actions
-- **Testing & QA:** Unit testing, Integration testing, API testing
 
 ---
-### Tools & Technologies:
+### Used Tools & Technologies:
 
 <p>
 <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" width="40" title="Python"/>
