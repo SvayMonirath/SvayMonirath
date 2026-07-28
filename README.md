@@ -1,13 +1,14 @@
 <h1 align="center">My Name is Svay Monirath</h1>
-<h3 align="center">Aspiring Backend Developer 
+<h3 align="center">Aspiring Backend Developer | AI Systems Engineer</h3>
 
 ---
 
 ### My learning:
-- **Backend:** Flask, FastAPI
-- **Databases:** PostgreSQL, MySQL, MongoDB  
-- **API Development:** REST APIs, Graphql,  Authentication & Security Best Practices  
-- **Deployment:** Render, Docker, GitHub Actions
+- **Language:** Python, Typescript, C++, Java
+- **Backend:** Flask, FastAPI, NestJS, ExpressJs
+- **Databases:** PostgreSQL, MySQL, MongoDB
+- **API Development:** REST APIs, Graphql, WebSocket, Authentication & Security Best Practices  
+- **Deployment:** Render, Docker, GitHub Actions, Cloudflare, Nginx
 
 ---
 ### Used Tools & Technologies:
