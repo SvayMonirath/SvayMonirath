@@ -32,22 +32,22 @@ Here is the everyday workflow I use to catch bad ideas early and let tests do th
 
 ## What I Built & What I Learned
 
-- **Cosmo** (Agent Workspace): Isolated Docker sandboxes for autonomous coding agents.  
-  *Lesson:* Always mount test files as read-only, otherwise agents will literally pass a failing build by deleting the test assertions.
+- **Cosmo (Agent Workspace)**: Isolated sandboxes for AI coding agents.  
+  *Lesson:* Always mount test files as read-only, otherwise agents will literally pass failing builds by deleting the test assertions.
 
-- **Veaja** (Voice AI Platform): Sub-second duplex voice receptionist handling phone calls across 59 languages.  
-  *Lesson:* Prompt engineering cannot fix dropped audio; real-time voice lives or dies by WebSocket packet buffers and low latency.
+- **Veaja (Real-Time Voice AI)**: Low-latency voice platform across 59 languages.  
+  *Lesson:* Prompt engineering cannot fix dropped audio packets; real-time voice lives or dies by WebSocket packet buffers and low latency.
 
-- **Wisp** (Audio Studio): In-browser vocal pitch tracker and offline-first audio editor.  
+- **Wisp (Audio Studio)**: In-browser vocal pitch tracker and offline-first audio editor.  
   *Lesson:* Heavy UI frameworks destroy 60fps audio; lightweight browser-native state machines beat bloated libraries every time.
 
-- **Better Communication** (Scenario Simulator): Interactive negotiation practice with realistic AI counter-parties.  
+- **Better Communication (Conversation Simulator)**: Practice simulator for difficult workplace conversations.  
   *Lesson:* People don't learn from polite chatbots; real confidence comes from failing hard, realistic scenarios.
 
 ---
 
 ## Tech Stack
 
-**Languages:** TypeScript, Python, C++, Go  
-**Backend & Real-Time:** NestJS, FastAPI, Fastify, WebSockets, WebRTC  
-**Data & Infra:** PostgreSQL, Redis, Docker, Temporal, Linux
+- **Languages:** TypeScript, Python, C++, Go
+- **Backend & Real-Time:** NestJS, FastAPI, Fastify, WebSockets, WebRTC
+- **Data & Tools:** PostgreSQL, Redis, Docker, Linux
