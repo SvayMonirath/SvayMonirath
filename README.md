@@ -1,61 +1,53 @@
-
 # Svay Monirath
 
-**Software Engineer** · Phnom Penh, Cambodia
-[Email](mailto:svaymonirathofficial@gmail.com) · [GitHub](https://github.com/SvayMonirath) ·
-[LinkedIn](https://linkedin.com/in/svay-monirath)
+**Software Engineer** · Phnom Penh, Cambodia  
+[Email](mailto:svaymonirathofficial@gmail.com) · [GitHub](https://github.com/SvayMonirath) · [LinkedIn](https://linkedin.com/in/svay-monirath)
 
-I build real-time voice backends, developer tools, and resilient agent workflows.
+I build real-time voice backends, developer tools, and agent workflows that ship reliable software without the chaos.
 
 ---
 
 ## How I Build With AI
 
-Most AI coding tools say yes to bad ideas and write fragile code. My workflow stops bad ideas
-before they become bugs by pitting models against each other and letting real compilers grade the
-output:
+Most AI tools act like eager junior devs: you give them a bad idea, they say *"Looks great!"*, and write 500 lines of broken code.
+
+Here is the everyday workflow I use to catch bad ideas early and let tests do the grading:
 
 ```text
-Goal ──► [ Plan Review Swarm ] ──► [ Sandboxed Test Loop ] ──► [ Human Review & Ship ]
-         Cross-model debate        Terminal auto-fixes         Verify diff & tests
-         (Evidence over consensus) (Compiler is truth)         (Tech lead sign-off)
+ 1. GOAL                 2. AGENT CHALLENGE (Planning)           3. BUILD & TEST LOOP (Coding)            4. SHIP
+┌──────────────┐        ┌───────────────────────────────┐       ┌──────────────────────────────┐        ┌──────────────┐
+│ You describe │  ───►  │ Planner writes the plan       │ ───►  │ Coder writes the code        │  ───►  │ You check    │
+│ what you     │        │        ▲              │       │       │        ▲             │       │        │ the changes  │
+│ want to      │        │        │ (Fixes plan) ▼       │       │        │ (Fixes bug) ▼       │        │ and deploy   │
+│ build        │        │ Critic attacks flaws & traps  │       │ Terminal runs tests          │        │ to prod      │
+└──────────────┘        │ (Multiple models check gaps)  │       │ (If tests fail, loops back)  │        └──────────────┘
+                        └───────────────────────────────┘       └──────────────────────────────┘
 ```
 
-- **Cross-examination over consensus**: Before touching code, multiple models debate the
-architecture to spot blind spots and security traps. We don't force agreement; we look for the best
-path backed by empirical evidence.
-- **Sandboxed build & test loop**: Once the plan is solid, a coding agent works in an isolated
-sandbox. Terminal tests (`vitest`, `pytest`, `tsc`) run automatically, looping error traces back
-until all tests pass.
-- **Human in control**: I act as the tech lead—reviewing the clean git diff and test evidence
-before anything touches production.
+1. **The Planning Challenge**: Before writing code, one agent drafts the plan and other models attack it. They hunt for edge cases, security holes, and missing pieces. We don't just stop because two models agree—we keep questioning the design until we're sure it actually works.
+2. **The Build & Test Loop**: Once the plan is solid, a coding agent writes the code and runs the test suite in the terminal. If a test fails, the terminal error goes right back to the agent to fix itself. It loops until all tests pass.
+3. **Final Review**: I inspect the code changes, make sure the tests are real, and ship it.
 
 ---
 
 ## What I Built & What I Learned
 
-- **Cosmo** (Agent Workspace): Isolated Docker sandboxes for autonomous coding agents.
-  *Lesson:* Always mount test files as read-only, otherwise agents will literally pass a failing
-  build by deleting the test assertions.
+- **Cosmo** (Agent Workspace): Isolated Docker sandboxes for autonomous coding agents.  
+  *Lesson:* Always mount test files as read-only, otherwise agents will literally pass a failing build by deleting the test assertions.
 
-- **Veaja** (Voice AI Platform): Sub-second duplex voice receptionist handling phone calls across
-59 languages.
-  *Lesson:* Prompt engineering cannot fix dropped audio; real-time voice lives or dies by WebSocket
-  packet buffers and low latency.
+- **Veaja** (Voice AI Platform): Sub-second duplex voice receptionist handling phone calls across 59 languages.  
+  *Lesson:* Prompt engineering cannot fix dropped audio; real-time voice lives or dies by WebSocket packet buffers and low latency.
 
-- **Wisp** (Audio Studio): In-browser vocal pitch tracker and offline-first audio editor.
-  *Lesson:* Heavy UI frameworks destroy 60fps audio; lightweight browser-native state machines beat
-  bloated libraries every time.
+- **Wisp** (Audio Studio): In-browser vocal pitch tracker and offline-first audio editor.  
+  *Lesson:* Heavy UI frameworks destroy 60fps audio; lightweight browser-native state machines beat bloated libraries every time.
 
-- **Better Communication** (Scenario Simulator): Interactive negotiation practice with realistic AI
-counter-parties.
-  *Lesson:* People don't learn from polite chatbots; real confidence comes from failing hard,
-  realistic scenarios.
+- **Better Communication** (Scenario Simulator): Interactive negotiation practice with realistic AI counter-parties.  
+  *Lesson:* People don't learn from polite chatbots; real confidence comes from failing hard, realistic scenarios.
 
 ---
 
 ## Tech Stack
 
-**Languages:** TypeScript, Python, C++, Go
-**Backend & Real-Time:** NestJS, FastAPI, Fastify, WebSockets, WebRTC
+**Languages:** TypeScript, Python, C++, Go  
+**Backend & Real-Time:** NestJS, FastAPI, Fastify, WebSockets, WebRTC  
 **Data & Infra:** PostgreSQL, Redis, Docker, Temporal, Linux
