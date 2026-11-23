@@ -1,37 +1,73 @@
 # Svay Monirath
 
-Hey, I'm Monirath. I build backend services, real-time voice infrastructure, and autonomous agent workflows.
+**Software Engineer**
+Phnom Penh, Cambodia | [Email](mailto:svaymonirathofficial@gmail.com) | [GitHub](https://github.com/SvayMonirath) | [LinkedIn](https://linkedin.com/in/svay-monirath)
 
-Most of my day is spent writing TypeScript, Python, and C++, designing streaming pipelines, and figuring out how to make AI agents actually reliable in production.
-
----
-
-### How I Build with AI
-
-Anyone can send a prompt to an LLM. In production, models are unpredictable—real software cannot be.
-
-When I build agentic systems, I treat models like untrusted workers inside a strict software harness:
-- **Small, isolated scopes**: Agents do one specific job in their own sandbox so they don't break other files.
-- **Automated test loops**: Agent output doesn't touch real state until it passes tests and linters. If tests fail, the error trace goes right back to the agent to fix itself.
-- **Hard permission gates**: Any risky action (deleting files, terminal commands, database writes) requires explicit confirmation.
+I build real-time voice backends, developer tools, and agent workflows that ship reliable software without the chaos.
 
 ---
 
-### What I Work On
+## How I Build With AI: The Everyday Loop
 
-- **Agentic Dev Tools**: Building developer environments where scoped agents write, test, and review code with live browser sandboxes (Cosmo, Wisp).
-- **Real-Time Voice & Audio**: Duplex audio streaming, voice activity detection, and speech pipelines across multiple languages.
-- **Resilient Backends**: Asynchronous APIs (FastAPI, NestJS), durable workflows (Temporal) that survive server restarts, and WebSockets.
+Most AI tools act like agreeable junior devs: you suggest a bad idea, they smile, say *"Great idea!"*, and write 500 lines of vulnerable code.
+
+My workflow stops bad ideas before they become bugs. I pit agents against each other to challenge assumptions, write code inside sandboxes, and let real compilers and tests do the grading:
+
+```text
+  1. SPEC               2. PLAN                3. AGENT BATTLE
+ [Task / Idea]   ──►  [Architecture]  ──►   Agent A proposes a plan
+                                                    │
+                                                    ▼
+                                            Agent B attacks it!
+                                            (catches security traps,
+                                             race conditions & blind spots)
+                                                    │
+                                                    ▼
+  6. SHIP               5. TEST & AUTO-FIX     4. IMPLEMENT
+ [Human Review]  ◄──  [Compiler & Tests] ◄── [Write Clean Code]
+      │                     │
+      ▼ (Green)             ▼ (Fails)
+ [Production]         [Feed Error Trace Back]
+                      (Auto-fixes in sandbox)
+```
+
+### The 3 Core Rules
+
+1. **The Agent Battle (Challenge Opinions First)**
+   Before touching code, Agent A writes the plan and Agent B tries to poke holes in it. They argue over edge cases, security traps, and race conditions until only a battle-tested design remains. Catching
+   mistakes here costs seconds; catching them in production costs weeks.
+
+2. **The Auto-Fix Feedback Loop**
+   Code runs in an isolated sandbox against real test suites and type checkers. If a test fails, the exact terminal error feeds right back into the model to fix itself automatically (capped at 3 to 5 loops so it
+   never spins out).
+
+3. **Compilers Over AI Debates**
+   We never ask an LLM if code works—we ask the compiler, linter, and unit tests. The test suite is the only ground truth.
 
 ---
 
-### Daily Stack
+## What I Built & What I Learned
 
-`TypeScript` · `Python` · `C++` · `FastAPI` · `NestJS` · `PostgreSQL` · `Redis` · `Docker` · `WebSockets`
+### 1. Cosmo — Agent Workspace & Sandboxes
+- **What I built:** An isolated developer workspace where coding agents run in Docker sandboxes with safety gates that stop accidental overwrites.
+- **What I learned:** If you don't lock down file boundaries, an agent will literally pass failing unit tests by deleting the test assertions. Always mount test suites as read-only.
+
+### 2. Veaja — Real-Time Voice AI Platform
+- **What I built:** A low-latency voice receptionist system supporting duplex audio, phone telephony, and calendar bookings across 59 languages.
+- **What I learned:** Prompt engineering doesn't fix dropped audio packets. Real-time audio lives or dies by low-latency WebSockets, packet buffers, and solid backend plumbing.
+
+### 3. Wisp — Audio Studio & Pitch Engine
+- **What I built:** A browser-native vocal pitch tracker and audio editor with offline-first local storage.
+- **What I learned:** Heavy third-party frameworks destroy 60fps audio performance on low-end laptops. Building lightweight, browser-native state machines always wins over bloated libraries.
+
+### 4. Better Communication — High-Stakes Conversation Simulator
+- **What I built:** A conversational judgment practice studio where engineers and managers practice difficult negotiations against realistic AI counter-parties.
+- **What I learned:** People don't build confidence by reading theory or chatting with polite bots. They learn by making real mistakes in tough scenarios and seeing exactly where their tactics broke down.
 
 ---
 
-### Connect
+## Tech Stack
 
-- Email: [svaymonirathofficial@gmail.com](mailto:svaymonirathofficial@gmail.com)
-- GitHub: [@SvayMonirath](https://github.com/SvayMonirath)
+- **Languages:** TypeScript, Python, C++, Go
+- **Backend & Real-Time:** NestJS, FastAPI, Fastify, WebSockets, WebRTC
+- **Data & Infrastructure:** PostgreSQL, Redis, Docker, Temporal, Linux
