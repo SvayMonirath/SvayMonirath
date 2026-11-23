@@ -1,6 +1,6 @@
 # Svay Monirath
 
-**Software Engineer**
+**Software Engineer**  
 Phnom Penh, Cambodia | [Email](mailto:svaymonirathofficial@gmail.com) | [GitHub](https://github.com/SvayMonirath) | [LinkedIn](https://linkedin.com/in/svay-monirath)
 
 I build real-time voice backends, developer tools, and agent workflows that ship reliable software without the chaos.
@@ -9,39 +9,45 @@ I build real-time voice backends, developer tools, and agent workflows that ship
 
 ## How I Build With AI: The Everyday Loop
 
-Most AI tools act like agreeable junior devs: you suggest a bad idea, they smile, say *"Great idea!"*, and write 500 lines of vulnerable code.
+Most AI tools act like agreeable junior developers: you suggest a bad idea, they say *"Great idea!"*, and write 500 lines of vulnerable code.
 
 My workflow stops bad ideas before they become bugs. I pit agents against each other to challenge assumptions, write code inside sandboxes, and let real compilers and tests do the grading:
 
-```text
-  1. SPEC               2. PLAN                3. AGENT BATTLE
- [Task / Idea]   ──►  [Architecture]  ──►   Agent A proposes a plan
-                                                    │
-                                                    ▼
-                                            Agent B attacks it!
-                                            (catches security traps,
-                                             race conditions & blind spots)
-                                                    │
-                                                    ▼
-  6. SHIP               5. TEST & AUTO-FIX     4. IMPLEMENT
- [Human Review]  ◄──  [Compiler & Tests] ◄── [Write Clean Code]
-      │                     │
-      ▼ (Green)             ▼ (Fails)
- [Production]         [Feed Error Trace Back]
-                      (Auto-fixes in sandbox)
+```mermaid
+flowchart TD
+    subgraph Phase1 ["1. Problem & Plan"]
+        A["Spec: Define inputs, outputs, and edge cases"] --> B["Plan: Break feature into small, isolated steps"]
+    end
+
+    subgraph Phase2 ["2. The Agent Battle"]
+        B --> C1["Agent A: Proposes Solution"]
+        B --> C2["Agent B: Attacks Flaws & Security Traps"]
+        C1 <-->|Debate & Challenge| C2
+        C1 & C2 --> C3["Battle-Tested Design Approved"]
+    end
+
+    subgraph Phase3 ["3. Build & Auto-Fix Loop"]
+        C3 --> D["Implement: Write code in sandbox"]
+        D --> E{"Run Tests & Compiler"}
+        E -- "Fails" --> F["Feed Terminal Error Back to Agent"]
+        F --> D
+    end
+
+    subgraph Phase4 ["4. Ship"]
+        E -- "Passes" --> G["Human Review: Inspect diff"]
+        G --> H["Ship to Production"]
+    end
 ```
 
 ### The 3 Core Rules
 
-1. **The Agent Battle (Challenge Opinions First)**
-   Before touching code, Agent A writes the plan and Agent B tries to poke holes in it. They argue over edge cases, security traps, and race conditions until only a battle-tested design remains. Catching
-   mistakes here costs seconds; catching them in production costs weeks.
+1. **The Agent Battle (Challenge Opinions First)**  
+   Before touching code, Agent A writes the plan and Agent B tries to poke holes in it. They argue over edge cases, security traps, and race conditions until only a battle-tested design remains. Catching mistakes here costs seconds; catching them in production costs weeks.
 
-2. **The Auto-Fix Feedback Loop**
-   Code runs in an isolated sandbox against real test suites and type checkers. If a test fails, the exact terminal error feeds right back into the model to fix itself automatically (capped at 3 to 5 loops so it
-   never spins out).
+2. **The Auto-Fix Feedback Loop**  
+   Code runs in an isolated sandbox against real test suites and type checkers. If a test fails, the exact terminal error feeds right back into the model to fix itself automatically (capped at 3 to 5 loops so it never spins out).
 
-3. **Compilers Over AI Debates**
+3. **Compilers Over AI Debates**  
    We never ask an LLM if code works—we ask the compiler, linter, and unit tests. The test suite is the only ground truth.
 
 ---
